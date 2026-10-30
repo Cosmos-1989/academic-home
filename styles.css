@@ -1,0 +1,328 @@
+:root {
+  color-scheme: light;
+  --page: #fcfcfc;
+  --surface: #fff;
+  --text: #2c3e50;
+  --heading: #1a202c;
+  --link: #365f91;
+  --line: #e9edf1;
+  --muted: #667180;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-padding-top: 24px; }
+
+body {
+  max-width: 890px;
+  margin: 0 auto;
+  padding: 40px 20px 52px;
+  background: var(--page);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  color: var(--heading);
+}
+
+h1 {
+  margin: 22px 0 42px;
+  text-align: center;
+  font-size: 36px;
+  line-height: 1.65;
+  font-weight: 700;
+  letter-spacing: -.7px;
+}
+
+.introduction {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 320px;
+  gap: 30px;
+  align-items: start;
+  border-top: 1px solid var(--line);
+  padding-top: 21px;
+  margin-bottom: 43px;
+}
+
+.biography {
+  min-width: 0;
+}
+
+.intro-image { margin: 0; }
+.intro-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgb(26 32 44 / 8%);
+}
+
+p { margin: 16px 0; }
+.biography p:first-child { margin-top: 0; }
+.biography p:last-child { margin-bottom: 0; }
+
+a {
+  color: var(--link);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+a:hover { color: #203f6c; }
+
+:focus-visible {
+  outline: 2px solid var(--link);
+  outline-offset: 5px;
+  border-radius: 2px;
+}
+
+main:focus { outline: none; }
+
+details {
+  margin-bottom: 20px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--surface);
+  box-shadow: 0 2px 8px rgb(26 32 44 / 3%);
+  scroll-margin-top: 24px;
+}
+
+summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  min-height: 88px;
+  padding: 21px 23px;
+  border-radius: 9px;
+  list-style: none;
+  cursor: pointer;
+}
+
+summary::-webkit-details-marker { display: none; }
+summary::marker { content: ""; }
+summary:hover { background: #fafbfc; }
+
+h2 {
+  margin: 0;
+  color: #2d3748;
+  font-size: 23px;
+  line-height: 1.5;
+  font-weight: 700;
+  letter-spacing: -.35px;
+}
+
+.toggle {
+  position: relative;
+  flex: 0 0 15px;
+  width: 15px;
+  height: 15px;
+  color: #8b98aa;
+}
+
+.toggle::before,
+.toggle::after {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 1px;
+  width: 13px;
+  height: 2px;
+  border-radius: 1px;
+  background: currentColor;
+}
+
+.toggle::after { transform: rotate(90deg); }
+details[open] > summary .toggle::after { display: none; }
+
+.section-content { padding: 0 23px 22px; }
+.section-content p { margin: 0; }
+.section-content ul, .section-content ol { margin: 0; padding-left: 24px; }
+.section-content li + li { margin-top: 16px; }
+.empty-state { color: var(--muted); }
+
+.research-area + .research-area { margin-top: 24px; }
+.research-area h3 {
+  margin: 0 0 10px;
+  color: #33312d;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.bibliography-group + .bibliography-group { margin-top: 30px; }
+.bibliography-group h3 {
+  margin: 0 0 16px;
+  color: #33312d;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 20px;
+  line-height: 1.5;
+}
+.section-content .bibliography-list { margin: 0; padding-left: 22px; }
+.section-content .bibliography-list > li + li { margin-top: 22px; }
+.bibliography-list > li { padding-left: 3px; overflow-wrap: anywhere; }
+.bibliography-list > li::marker { color: var(--muted); }
+.bib-title { display: block; font-weight: 600; line-height: 1.55; }
+.bib-authors { display: block; margin-top: 4px; }
+.bib-details { display: block; margin-top: 3px; color: #566170; font-size: 14px; line-height: 1.65; }
+.bib-details cite { font-style: italic; }
+.bib-details a { white-space: normal; }
+.bibliography-note { margin-top: 22px !important; font-size: 14px; color: var(--muted); }
+.bibliography-source { margin-bottom: 22px !important; font-size: 14px; }
+
+.resources-introduction { margin-bottom: 24px !important; }
+.resource-group + .resource-group {
+  margin-top: 24px;
+  padding-top: 22px;
+  border-top: 1px solid var(--line);
+}
+.resource-group h3 {
+  margin: 0 0 10px;
+  color: #33312d;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.course-section {
+  min-width: 0;
+  margin-bottom: 14px;
+  border-color: #e3e1dc;
+  border-radius: 8px;
+  box-shadow: none;
+}
+.course-section:last-child { margin-bottom: 0; }
+.course-section > summary { min-height: 66px; padding: 16px 18px; border-radius: 7px; }
+.course-section > summary:hover { background: #faf9f6; }
+.course-section h3 {
+  margin: 0;
+  color: #33312d;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+.course-content { min-width: 0; padding: 0 16px 16px; }
+.schedule-scroll {
+  max-width: 100%;
+  overflow-x: auto;
+  border: 1px solid #dedbd3;
+  border-radius: 7px;
+  scrollbar-color: #9d978d #f2f0eb;
+}
+.schedule-table {
+  width: 100%;
+  min-width: 640px;
+  border-collapse: collapse;
+  table-layout: fixed;
+  color: #403e39;
+  font-size: 15px;
+  line-height: 1.65;
+}
+.week-column { width: 10%; }
+.date-column { width: 12%; }
+.topic-column { width: 26%; }
+.reading-column { width: 27%; }
+.notes-column { width: 25%; }
+.schedule-table th {
+  padding: 14px 14px;
+  background: #2e2d28;
+  color: #fff;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: .04em;
+  text-align: left;
+  text-transform: uppercase;
+}
+.schedule-table td { padding: 17px 14px; border-top: 1px solid #dedbd3; vertical-align: top; overflow-wrap: anywhere; }
+.schedule-table tbody tr:nth-child(odd) { background: #f4f4f4; }
+.schedule-table tbody tr:nth-child(even) { background: #fff; }
+.schedule-table tbody tr:first-child { background: #f2e7e7; }
+.schedule-table a { color: #a52722; }
+.schedule-table a:hover { color: #7e1a17; }
+.schedule-table a + a { display: block; margin-top: 6px; }
+.schedule-table .schedule-empty { height: 88px; color: #6c625f; text-align: center; vertical-align: middle; }
+.course-description { margin-bottom: 20px; }
+.course-description p + p { margin-top: 10px; }
+:is(.fa-schedule, .topology-schedule) { min-width: 680px; }
+:is(.fa-schedule, .topology-schedule) .lecture-column { width: 13%; }
+:is(.fa-schedule, .topology-schedule) .lecture-topic-column { width: 29%; }
+:is(.fa-schedule, .topology-schedule) .content-column { width: 41%; }
+:is(.fa-schedule, .topology-schedule) .materials-column { width: 17%; }
+:is(.fa-schedule, .topology-schedule) thead th { letter-spacing: 0; text-transform: none; }
+:is(.fa-schedule, .topology-schedule) tbody th {
+  padding: 17px 14px;
+  border-top: 1px solid #dedbd3;
+  background: transparent;
+  color: inherit;
+  font-family: inherit;
+  font-weight: 400;
+  letter-spacing: 0;
+  vertical-align: top;
+}
+:is(.fa-schedule, .topology-schedule) .forthcoming { color: var(--muted); font-size: 13px; }
+.course-reading { display: block; margin-top: 8px; color: var(--muted); font-size: 13px; }
+@media print {
+  #functional-analysis, #topology, #teaching { break-inside: auto; }
+  :is(.fa-schedule, .topology-schedule) { min-width: 0; }
+  :is(.fa-schedule, .topology-schedule) thead { display: table-header-group; }
+  :is(.fa-schedule, .topology-schedule) tbody th { padding: 8px; }
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.skip-link {
+  position: absolute;
+  top: 10px;
+  left: 16px;
+  padding: 8px 14px;
+  background: var(--surface);
+  transform: translateY(-180%);
+}
+.skip-link:focus { transform: translateY(0); }
+
+@media (max-width: 700px) {
+  .introduction { grid-template-columns: minmax(0, 1fr); gap: 28px; }
+  .intro-image { width: 100%; max-width: 320px; justify-self: center; }
+}
+
+@media (max-width: 600px) {
+  body { padding: 22px 20px 32px; }
+  h1 { margin: 15px 0 29px; font-size: 32px; }
+  .introduction { padding-top: 12px; margin-bottom: 31px; }
+  summary { min-height: 78px; padding: 19px 20px; }
+  h2 { font-size: 22px; }
+  .section-content { padding: 0 20px 22px; }
+  details { margin-bottom: 16px; }
+  .course-section > summary { padding: 15px 16px; }
+  .course-section h3 { font-size: 19px; }
+  .course-content { padding: 0 12px 12px; }
+  .schedule-table .schedule-empty { text-align: left; }
+}
+
+@media print {
+  body { max-width: none; padding: 0; color: #000; background: #fff; }
+  h1 { margin-top: 0; }
+  details { box-shadow: none; break-inside: avoid; }
+  details::details-content { display: block; content-visibility: visible; }
+  .toggle, .skip-link { display: none; }
+  a { color: #000; }
+  .schedule-scroll { overflow: visible; }
+  .schedule-table { min-width: 0; font-size: 10pt; }
+  .schedule-table th, .schedule-table td { padding: 8px; }
+  .schedule-table th { font-size: 10pt; print-color-adjust: exact; }
+  .schedule-table tr { break-inside: avoid; }
+}
