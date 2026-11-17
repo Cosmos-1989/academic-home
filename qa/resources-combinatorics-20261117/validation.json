@@ -1,0 +1,10 @@
+{
+  "all_188_pages_pixel_identical_at_700px": true,
+  "html_unique_ids": true,
+  "existing_html_byte_preserved": true,
+  "asset_hashes": {
+    "assets/combinatorics/classic-combinatorics-100-chinese.pdf": "6c90fc7256dadd62c26decb678529d71c3157d2d10f0ff8cfa895362120af33f",
+    "assets/combinatorics/textbook/part1.pdf": "4190127be2f2f7116b7b175f575d68be0c2528427aea125ef01af19cfadcf51c",
+    "assets/combinatorics/textbook/part2.pdf": "c61c977c2ed25b0be5a348cc4f332f9a54527be52716cc4c52f056776e2bbea6"
+  }
+}

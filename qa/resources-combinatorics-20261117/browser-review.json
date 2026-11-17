@@ -1,0 +1,12 @@
+{
+  "desktop_preview": "Checked both English descriptions and download labels at the default viewport.",
+  "mobile_preview": {
+    "width": 390,
+    "height": 844,
+    "document_scroll_width": 390,
+    "horizontal_overflow": false
+  },
+  "resources_details_opens_from_hash": true,
+  "unfinished_part_outline_anchor_visually_verified": true,
+  "browser_viewport_reset": true
+}

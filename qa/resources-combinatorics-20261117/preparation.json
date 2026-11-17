@@ -1,0 +1,119 @@
+{
+  "date": "2026-11-17",
+  "canonical_pdf_unchanged": true,
+  "annotation_only_changes": [
+    {
+      "page": 180,
+      "old_file": "textbook/part1.pdf",
+      "old_destination": "chapter.1",
+      "new_url": "https://cosmos-1989.github.io/academic-home/assets/combinatorics/textbook/part1.pdf#nameddest=chapter.1"
+    },
+    {
+      "page": 180,
+      "old_file": "textbook/part1.pdf",
+      "old_destination": "chapter.2",
+      "new_url": "https://cosmos-1989.github.io/academic-home/assets/combinatorics/textbook/part1.pdf#nameddest=chapter.2"
+    },
+    {
+      "page": 180,
+      "old_file": "textbook/part1.pdf",
+      "old_destination": "chapter.3",
+      "new_url": "https://cosmos-1989.github.io/academic-home/assets/combinatorics/textbook/part1.pdf#nameddest=chapter.3"
+    },
+    {
+      "page": 180,
+      "old_file": "textbook/part1.pdf",
+      "old_destination": "chapter.4",
+      "new_url": "https://cosmos-1989.github.io/academic-home/assets/combinatorics/textbook/part1.pdf#nameddest=chapter.4"
+    },
+    {
+      "page": 180,
+      "old_file": "textbook/part1.pdf",
+      "old_destination": "chapter.5",
+      "new_url": "https://cosmos-1989.github.io/academic-home/assets/combinatorics/textbook/part1.pdf#nameddest=chapter.5"
+    },
+    {
+      "page": 181,
+      "old_file": "textbook/part2.pdf",
+      "old_destination": "chapter.6",
+      "new_url": "https://cosmos-1989.github.io/academic-home/assets/combinatorics/textbook/part2.pdf#nameddest=chapter.6"
+    },
+    {
+      "page": 181,
+      "old_file": "textbook/part2.pdf",
+      "old_destination": "chapter.7",
+      "new_url": "https://cosmos-1989.github.io/academic-home/assets/combinatorics/textbook/part2.pdf#nameddest=chapter.7"
+    },
+    {
+      "page": 181,
+      "old_file": "textbook/part2.pdf",
+      "old_destination": "chapter.8",
+      "new_url": "https://cosmos-1989.github.io/academic-home/assets/combinatorics/textbook/part2.pdf#nameddest=chapter.8"
+    },
+    {
+      "page": 181,
+      "old_file": "textbook/part2.pdf",
+      "old_destination": "chapter.9",
+      "new_url": "https://cosmos-1989.github.io/academic-home/assets/combinatorics/textbook/part2.pdf#nameddest=chapter.9"
+    },
+    {
+      "page": 181,
+      "old_file": "textbook/part3-plan.pdf",
+      "old_destination": "[0, '/Fit']",
+      "new_url": "https://cosmos-1989.github.io/academic-home/#olympiad-combinatorics-planned"
+    },
+    {
+      "page": 181,
+      "old_file": "textbook/part3-plan.pdf",
+      "old_destination": "[0, '/Fit']",
+      "new_url": "https://cosmos-1989.github.io/academic-home/#olympiad-combinatorics-planned"
+    },
+    {
+      "page": 182,
+      "old_file": "textbook/part3-plan.pdf",
+      "old_destination": "[0, '/Fit']",
+      "new_url": "https://cosmos-1989.github.io/academic-home/#olympiad-combinatorics-planned"
+    },
+    {
+      "page": 182,
+      "old_file": "textbook/part3-plan.pdf",
+      "old_destination": "[0, '/Fit']",
+      "new_url": "https://cosmos-1989.github.io/academic-home/#olympiad-combinatorics-planned"
+    },
+    {
+      "page": 182,
+      "old_file": "textbook/part3-plan.pdf",
+      "old_destination": "[0, '/Fit']",
+      "new_url": "https://cosmos-1989.github.io/academic-home/#olympiad-combinatorics-planned"
+    },
+    {
+      "page": 182,
+      "old_file": "textbook/part3-plan.pdf",
+      "old_destination": "[0, '/Fit']",
+      "new_url": "https://cosmos-1989.github.io/academic-home/#olympiad-combinatorics-planned"
+    }
+  ],
+  "all_188_page_content_streams_unchanged": true,
+  "all_188_page_texts_unchanged": true,
+  "all_page_boxes_unchanged": true,
+  "named_destinations_preserved": true,
+  "files": [
+    {
+      "path": "assets/combinatorics/classic-combinatorics-100-chinese.pdf",
+      "bytes": 1989447,
+      "sha256": "6c90fc7256dadd62c26decb678529d71c3157d2d10f0ff8cfa895362120af33f"
+    },
+    {
+      "path": "assets/combinatorics/textbook/part1.pdf",
+      "bytes": 694183,
+      "sha256": "4190127be2f2f7116b7b175f575d68be0c2528427aea125ef01af19cfadcf51c"
+    },
+    {
+      "path": "assets/combinatorics/textbook/part2.pdf",
+      "bytes": 744153,
+      "sha256": "c61c977c2ed25b0be5a348cc4f332f9a54527be52716cc4c52f056776e2bbea6"
+    }
+  ],
+  "site_source_open_sha": "a12b7624fdb31c2dbff08000551ed3480be98143",
+  "github_baseline_sha": "7fa4872"
+}
