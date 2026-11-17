@@ -353,3 +353,8 @@ details[open] > summary .toggle::after { display: none; }
 .resource-description .book-description, .resource-description > p { margin: 8px 0 12px !important; }
 .section-content .book-list > li + li { margin-top: 18px; padding-top: 18px; }
 #resources-mathematical-materials article h4 { margin: 0 0 6px; font-family: Georgia, "Times New Roman", serif; font-size: 19px; line-height: 1.5; }
+
+/* Subject headings within the annotated book collection. */
+.book-subject + .book-subject { margin-top: 28px; }
+.book-subject > h4 { margin: 0 0 12px; color: #566170; font-family: Georgia, "Times New Roman", serif; font-size: 17px; line-height: 1.5; }
+.book-entry h5 { margin: 0 0 6px; font-family: Georgia, "Times New Roman", serif; font-size: 19px; line-height: 1.5; }
