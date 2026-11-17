@@ -341,3 +341,15 @@ details[open] > summary .toggle::after { display: none; }
 .book-download a { display: inline-block; padding: 9px 0; font-weight: 600; }
 .book-download > span { color: #566170; }
 .visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+
+/* Compact resource browsing, with full descriptions available on demand. */
+.resources-nav { display: flex; flex-wrap: wrap; gap: 8px 18px; margin: 0 0 28px; font-size: 14px; }
+.resources-nav a { padding: 4px 0; }
+.resource-description { margin: 9px 0; border: 0; border-radius: 0; box-shadow: none; background: transparent; }
+.resource-description > summary { display: inline-flex; min-height: 0; padding: 4px 0; border-radius: 0; color: var(--link); font-size: 14px; font-weight: 600; gap: 7px; }
+.resource-description > summary::before { content: "▸"; display: inline-block; }
+.resource-description[open] > summary::before { content: "▾"; }
+.resource-description > summary:hover { background: transparent; text-decoration: underline; }
+.resource-description .book-description, .resource-description > p { margin: 8px 0 12px !important; }
+.section-content .book-list > li + li { margin-top: 18px; padding-top: 18px; }
+#resources-mathematical-materials article h4 { margin: 0 0 6px; font-family: Georgia, "Times New Roman", serif; font-size: 19px; line-height: 1.5; }
